@@ -24,7 +24,7 @@
     <main class="bg-zinc-800 pb-5">
         <div class="container pt-20 w-3/4 gap-4">
             <section class="players-section">
-                <div class=" grid grid-cols-4 gap-4">
+                <div class=" grid grid-cols-4 gap-4 divide-x">
                     <!-- -----player no 1------ -->
                     <div>
                         <img src="images/Masrafe-Bin-Mortaza.jpeg" alt="" />
@@ -97,6 +97,23 @@
                                     <p class="text-gray-300 inline">Per Player</p>
                                     <input id="player-cost" class="bg-znic-900 text-white w-1/2 border" type="text">
                                 </div>
+                                <button id="calculate-btn"
+                                    class="bg-blue-800 text-white w-full p-2 mt-5">Calculate</button>
+
+                                <div class="mt-5 mb-5 text-gray-300 flex justify-around">
+                                    <p>Player Expenses </p>
+                                    <p id="player-ex" class="hidden">
+                                        $<span id="player-expense"></span></p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between mt-5">
+                                <p class="text-gray-300 inline">Manager</p>
+                                <input id="Manager-cost" class="bg-zinc-900 text-white w-1/2 border" type="text">
+                            </div>
+
+                            <div class="flex justify-between mt-2">
+                                <p class="text-gray-300 inline">Coach</p>
+                                <input id="coach-cost" class="bg-zinc-900 text-white w-1/2 border" type="text" />
                             </div>
                         </div>
                     </div>
