@@ -22,13 +22,13 @@
         </div>
     </header>
     <main class="bg-zinc-800 pb-5">
-        <div class="container pt-20 w-3/4 gap-4">
+        <div class="container pt-20 w-3/4 mx-auto flex">
             <section class="players-section">
-                <div class=" grid grid-cols-4 gap-4 divide-x">
+                <div class=" grid grid-cols-4 gap-4 ">
                     <!-- -----player no 1------ -->
                     <div>
-                        <img src="images/Masrafe-Bin-Mortaza.jpeg" alt="" />
-                        <div class="player-info mx-auto flex flex-col items-center bg-z-nic-900 text-white">
+                        <img class="h-2/4 w-full" src="images/Masrafe-Bin-Mortaza.jpeg" alt="" />
+                        <div class="player-info mx-auto flex flex-col items-center bg-znic-900 text-white">
                             <h3 class="mt-4 mb-3 text-2xl font-bold">Masrafe Bin Mortaza</h3>
                             <button id="player-one-btn" value="Masrafe Bin Mortaza"
                                 class="select-btn bg-blue-800 w-3/4 p-2 mb-5">SELECT</button>
@@ -36,19 +36,19 @@
                     </div>
                     <!-- -----player no 2------ -->
                     <div>
-                        <img src="images/mushfiqur-rahim-1541502935.jpg" alt="" />
+                        <img class="h-1/2 w-full" src="images/mushfiqur-rahim-1541502935.jpg" alt="" />
                         <div class="player-info mx-auto flex flex-col items-center bg-z-nic-900 text-white">
                             <h3 class="mt-4 mb-3 text-2xl font-bold">Mushfiqur Rahim</h3>
-                            <button id="player-one-btn" value="Mushfiqur Rahim"
+                            <button id="player-two-btn" value="Mushfiqur Rahim"
                                 class="select-btn bg-blue-800 w-3/4 p-2 mb-5">SELECT</button>
                         </div>
                     </div>
                     <!-- -----player no 3------ -->
                     <div>
-                        <img src="images/Tamim-Iqbal.jpg" alt="" />
+                        <img class="h-1/2 w-full" src="images/Tamim-Iqbal.jpg" alt="" />
                         <div class="player-info mx-auto flex flex-col items-center bg-z-nic-900 text-white">
                             <h3 class="mt-4 mb-3 text-2xl font-bold">Tamim Iqbal</h3>
-                            <button id="player-one-btn" value="Tamim Iqbal"
+                            <button id="player-three-btn" value="Tamim Iqbal"
                                 class="select-btn bg-blue-800 w-3/4 p-2 mb-5">SELECT</button>
                         </div>
                     </div>
@@ -63,28 +63,29 @@
 
                     <!-- -----player no 4------ -->
                     <div>
-                        <img src="images/taskin.jpeg" alt="" />
+                        <img class="h-1/2 w-full" src="images/taskin.jpeg" alt="" />
+
                         <div class="player-info mx-auto flex flex-col items-center bg-z-nic-900 text-white">
                             <h3 class="mt-4 mb-3 text-2xl font-bold">Taskin</h3>
-                            <button id="player-one-btn" value="Taskin"
+                            <button id="player-four-btn" value="Taskin"
                                 class="select-btn bg-blue-800 w-3/4 p-2 mb-5">SELECT</button>
                         </div>
                     </div>
                     <!-- -----player no 5------ -->
                     <div>
-                        <img src="images/Mujtafizur Rahman.jpg" alt="" />
+                        <img class="h-1/2 w-full" src="images/Mujtafizur Rahman.jpg" alt="" />
                         <div class="player-info mx-auto flex flex-col items-center bg-z-nic-900 text-white">
                             <h3 class="mt-4 mb-3 text-2xl font-bold">Mujtafizur Rahman</h3>
-                            <button id="player-one-btn" value="Mujtafizur Rahman"
+                            <button id="player-five-btn" value="Mujtafizur Rahman"
                                 class="select-btn bg-blue-800 w-3/4 p-2 mb-5">SELECT</button>
                         </div>
                     </div>
                     <!-- -----player no 6------ -->
                     <div>
-                        <img src="images/Shakib Al Hasan.jpg" alt="" />
+                        <img class="h-1/2 w-full" src="images/Shakib Al Hasan.jpg" alt="" />
                         <div class="player-info mx-auto flex flex-col items-center bg-z-nic-900 text-white">
                             <h3 class="mt-4 mb-3 text-2xl font-bold">Shakib Al Hasan</h3>
-                            <button id="player-one-btn" value="Shakib Al Hasan"
+                            <button id="player-six-btn" value="Shakib Al Hasan"
                                 class="select-btn bg-blue-800 w-3/4 p-2 mb-5">SELECT</button>
                         </div>
                     </div>
@@ -115,9 +116,20 @@
                                 <p class="text-gray-300 inline">Coach</p>
                                 <input id="coach-cost" class="bg-zinc-900 text-white w-1/2 border" type="text" />
                             </div>
+                            <div>
+                                <button id="calculate-total-btn" class="bg-blue-800 text-white w-full p-2 mt-5">
+                                    Calculate Total
+                                </button>
+                                <!-- player expense total -->
+                                <div class="mt-5 mb-5 text-gray-300 flex justify-around">
+                                    <p>Total</p>
+                                    <p id="total-ex" class="hidden text-orange-600">
+                                        $<span id="total-expense"></span>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </section>
         </div>
