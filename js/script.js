@@ -59,7 +59,7 @@ document.getElementById('player-six-btn').addEventListener('click', function (ev
 });
 
 function insertIntoTextField(inputId, data) {
-    document.getElementById(inputId).innertext = data;
+    document.getElementById(inputId).innerText = data;
 }
 function getDataFromInputField(inputId) {
     return parseInt(document.getElementById(inputId).value);
@@ -73,7 +73,7 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     const costPerPlayer = parseInt(document.getElementById('player-expense').innerText
     );
     const managerCost = getDataFromInputField('manager-cost');
-    const coachCost = getDataFromInputField('coachCost');
+    const coachCost = getDataFromInputField('coach-cost');
     const totalCost = costPerPlayer + managerCost + coachCost;
     document.getElementById('total-ex').style.display = 'inline';
     insertIntoTextField('total-expense', totalCost);
